@@ -2,8 +2,6 @@
 
 Several mathematical libraries developed in the years 1970-1990 remain popular in the geophysics community.
 
-Three-dimensional rendering of a scalar function defined on an equally spaced latitudinal grid.
-
 These libraries are:
 
 FFTPACK: A library of fast Fourier transforms
