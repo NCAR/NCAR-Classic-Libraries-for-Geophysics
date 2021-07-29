@@ -31,7 +31,7 @@ the Computational & Information Systems Laboratory (CISL).
 
 -------------------------------------------------------------------------------------
 
-### FFTPACK 5.1 - A Fortran77 library of fast Fourier transforms**
+### FFTPACK 5.1 - A Fortran77 library of fast Fourier transforms
 
 #### Abstract:
 Library FFTPACK 5.1 contains 1D, 2D, and multiple fast Fourier subroutines, 
