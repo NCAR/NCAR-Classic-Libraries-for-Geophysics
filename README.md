@@ -6,13 +6,13 @@ Those libraries are:
 
 [**FFTPACK**](https://github.com/NCAR/NCAR-Classic-Libraries-for-Geophysics/tree/main/FFTPack): A library of fast Fourier transforms
 
-**FISHPACK**: Fortran subprograms for solving separable elliptic partial differential equations (PDEs)
+[**FISHPACK**](https://github.com/NCAR/NCAR-Classic-Libraries-for-Geophysics/tree/main/FishPack): Fortran subprograms for solving separable elliptic partial differential equations (PDEs)
 
-**FISHPACK 90**: FISHPACK subprograms with a Fortran 90 interface
+[**FISHPACK 90**](https://github.com/NCAR/NCAR-Classic-Libraries-for-Geophysics/tree/main/FishPack_90): FISHPACK subprograms with a Fortran 90 interface
 
-**MUDPACK**: Multigrid Fortran subprograms for solving separable and non-separable elliptic PDEs
+[**MUDPACK**](https://github.com/NCAR/NCAR-Classic-Libraries-for-Geophysics/tree/main/MudPack): Multigrid Fortran subprograms for solving separable and non-separable elliptic PDEs
 
-**SPHEREPACK**: A Fortran library for modeling geophysical processes
+[**SPHEREPACK**](https://github.com/NCAR/NCAR-Classic-Libraries-for-Geophysics/tree/main/SpherePack): A Fortran library for modeling geophysical processes
 
 
 All of these library routines are written primarily in Fortran 77. Their internal implementation does not 
