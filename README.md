@@ -4,7 +4,7 @@ Several mathematical libraries developed at the National Center for Atmospheric 
 
 Those libraries are:
 
-**FFTPACK**: A library of fast Fourier transforms
+[**FFTPACK**](https://github.com/NCAR/NCAR-Classic-Libraries-for-Geophysics/tree/main/FFTPack): A library of fast Fourier transforms
 
 **FISHPACK**: Fortran subprograms for solving separable elliptic partial differential equations (PDEs)
 
