@@ -55,7 +55,7 @@ to the calling program with error return IER different than zero. Users may cons
 modifying the STOP statement in order to call system-specific 
 exception-handling facilities.
 
-Caveat
+#### CAVEAT:
 The internal implementation of the FFTPACK 5.1 routines does not always conform to the Fortran standard.
 
 References
@@ -64,7 +64,7 @@ References
 (2) Fast Fourier Transforms Algorithms for Vector Computers, 
     by Paul Swarztrauber, Parallel Computing, (1984) pp.45-63.
 
-
+-------------------------------------------------------------------------------------
 ### FISHPACK - Efficient FORTRAN Subprograms for the Solution of Separable Elliptic Partial Differential Equations
 
 #### Abstract:
@@ -76,7 +76,8 @@ The FISHPACK library and programs are intended to be installed on your computer 
 
 If your application requires solution of nonseparable elliptic PDEs, or a mix of separable and nonseparable ones, consider using the MUDPACK library instead of FISHPACK. MUDPACK uses multigrid iteration to approximate separable and nonseparable elliptic PDEs. The software is available on NCAR's web pages. If you are solving separable elliptic PDEs only, and prefer Fortran90 syntax, then you may want to use FISHPACK90, also available on NCAR's web pages. Both FISHPACK and FISHPACK90 have the same functionality.
 
-CAVEAT: FISHPACK source code is known to break the Fortran77 Standard in various ways. In particular, some of the routines pass arguments of one type and use them as another. We have not compiled a comprehensive list of FISHPACK infractions. Prospective users who require complete adherence to the standard for their applications are advised that this package is not compliant.
+#### CAVEAT:
+FISHPACK source code is known to break the Fortran77 Standard in various ways. In particular, some of the routines pass arguments of one type and use them as another. We have not compiled a comprehensive list of FISHPACK infractions. Prospective users who require complete adherence to the standard for their applications are advised that this package is not compliant.
 
 ###### FISHPACK, Copyright (C) 2004-2011, Computational Information Systems Laboratory, University Corporation for Atmospheric Research
 -------------------------------------------------------------------------------------
@@ -93,8 +94,7 @@ The FISHPACK90 library and programs are intended to be installed on your compute
 
 If your application requires solution of nonseparable elliptic PDEs, or a mix of separable and nonseparable ones, consider using the MUDPACK library instead of FISHPACK90. MUDPACK uses multigrid iteration to approximate separable and nonseparable elliptic PDEs. The software is available on NCAR's web pages. If you are solving separable elliptic PDEs only, and prefer Fortran77 syntax, then you may want to use FISHPACK, also available on NCAR's web pages. Both FISHPACK and FISHPACK90 have the same functionality, though their calling sequences are slightly different and the packages must not be used interchangably without making the appropriate syntax changes.
 
-CAVEAT:
-
+#### CAVEAT:
 FISHPACK90 source code is known to break the Fortran Standard in various ways. In particular, the subsidiary FFT routines sometimes pass arguments of one type and use them as another. We have not compiled a comprehensive list of FISHPACK90 infractions. Prospective users who require complete adherence to the standard for their applications are advised that this package is not compliant.
 
 ###### FISHPACK90, Copyright (C) 2004-2011, Computational Information Systems Laboratory, University Corporation for Atmospheric Research
