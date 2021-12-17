@@ -1,0 +1,16 @@
+2018-05-18
+
+This README file is specific to FISHPACK90 library version 1.1 dated May 18, 2018.  The library 
+was written at NCAR as a Fortran90 version of the original FISHPACK library. The two libraries
+have the indentical functionality.
+
+After you have downloaded fishpack90_1.1.tar.gz into a clean directory on your Unix or Linux system, 
+execute these commands:
+
+gunzip fishpack90_1.1.tar.gz
+tar xvf fishpack90_1.1.tar
+cd fishpack90_1.1
+
+In directory fishpack90_1.1/doc, follow instructions in the README_FISHPACK90_1.1 file for more 
+information, including the caveats. Then use your browser to open and navigate FISHPACK90_1.1.html, 
+following the links to view instructions for user-level routines.
