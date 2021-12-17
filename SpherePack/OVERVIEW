@@ -1,0 +1,17 @@
+2021-12-07
+
+This spherepack3.2 library dated 2011-12-06 was written at NCAR by John Adams and Paul
+Swarztrauber. This distribution is identical with the 2011-12-06 release except for 
+changes in the README_SPHEREPACK3.2 file in the doc directory. Thus, the version level 
+remains at 3.2.
+
+After you have downloaded spherepack3.2 into a clean directory on your Unix or Linux system, 
+execute these commands:
+
+gunzip spherepack3.2.tar.gz
+tar xvf spherepack3.2.tar
+cd spherepack3.2
+
+Within the spherepack3.2/doc directory, follow instructions in the README_SPHEREPACK3.2 
+file.  Read the caveats in that file, then with your browser open SPHEREPACK3.2.html and
+follow the links to view usage documentation for the user-level routines.
