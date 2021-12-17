@@ -1,0 +1,16 @@
+2011-12-06
+
+This FISHPACK library version 4.1 was written at NCAR by Paul N Swarztrauber, John Adams and 
+Roland Sweet.
+
+After you have downloaded fishpack4.1.tar.gz into a clean directory on your Unix or Linux system, 
+execute these commands:
+
+gunzip fishpack4.1.tar.gz 
+tar xvf fishpack4.1.tar
+cd fishpack/doc
+
+Within that last directory fishpack/doc, follow instructions in README_FISHPACK4.1 for more information,
+including the caveats.  Then use your browser to open and navigate FISHPACK4.1.html, following the links 
+to view instructions for user-level routines.
+
