@@ -1,0 +1,22 @@
+2021-12-07
+
+This README file is specific to mudpack5.0.1 dated 2011-12-06. It was written at NCAR by
+John Adams. This version is dentical with the one in 2011, except for changes in two
+README files, including this one.
+
+After you have downloaded mudpack5.0.1 into a clean directory on your Unix or Linux system, 
+execute these commands:
+
+gunzip mudpack5.0.1.tar.gz
+tar xvf mudpack5.0.1.tar
+cd mudpack5.0.1
+
+Within that last directory mudpack5.0.1, follow instructions in the README_MUDPACK5.0.1 
+file for more information.  Read the caveats in that file, about Fortran90 non-adherence, 
+and the fact this library is older and best suited to applications in which it was 
+previously used.
+
+Also, in directory mudpack5.0.1, use your browser to open and navigate MUDPACK.html for 
+more information about Mudpack, including support level (none) and usage instructions for 
+each user-level routine.
+
