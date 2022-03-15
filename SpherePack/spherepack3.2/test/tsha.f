@@ -243,21 +243,21 @@ c     call aout(s(1,1,k),"   s",nlat,nlon)
       end do
       end
       subroutine iout(ivar,nam)
-      real nam
+      character(len=*) nam
       write(6,10) nam , ivar
    10 format(1h a4, 3h = ,i8)
       return
       end
 c
       subroutine vout(var,nam)
-      real nam
+      character(len=*) nam
       write(6,10) nam , var
    10 format(1h a4,3h = ,e12.5)
       return
       end
 c
       subroutine name(nam)
-      real nam
+      character(len=*) nam
       write(6,100) nam
   100 format(1h a8)
       return
@@ -265,7 +265,7 @@ c
 c
       subroutine vecout(vec,nam,len)
       dimension vec(len)
-      real nam
+      character(len=*) nam
       write(6,109) nam, (vec(l),l=1,len)
   109 format(1h a4,/(1h 8e11.4))
       return

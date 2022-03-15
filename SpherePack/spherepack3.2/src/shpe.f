@@ -176,7 +176,7 @@ c
      1  pe,po,ze,zo,ipse,jzse,ipso,jzso,
      2  cp,work,wx,s,e,thet,xx,z,a,b,we,ped,wo,pod,u)
 c
-      double precision sum,eps,pi,dthet,v,a1,b1,c1
+      double precision sum,eps,pi,dthet,v(nlat,nlon),a1,b1,c1
       parameter (eps=5.0d-8)
       double precision cp(idp),work(idp),wx(idp),s(idp+1),
      1  e(idp),thet(idp),xx(idp),z(idp),u(idp,idp),

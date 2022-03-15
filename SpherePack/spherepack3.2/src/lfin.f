@@ -124,6 +124,7 @@ c                        notes by paul n. swarztrauber)
 c
       subroutine lfin (init,theta,l,m,nm,pb,id,wlfin)
       dimension       pb(1)        ,wlfin(1)
+      dimension theta(*)
 c
 c     total length of wlfin is 4*l*(nm+1)
 c

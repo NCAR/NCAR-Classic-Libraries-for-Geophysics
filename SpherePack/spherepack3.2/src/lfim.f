@@ -125,6 +125,7 @@ c                        notes by paul n. swarztrauber)
 c
       subroutine lfim (init,theta,l,n,nm,pb,id,wlfim)
       dimension       pb(1)        ,wlfim(1)
+      dimension theta(*)
 c
 c     total length of wlfim is 4*l*(nm+1)
 c

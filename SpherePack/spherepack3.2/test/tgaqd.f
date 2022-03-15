@@ -655,7 +655,7 @@ c            = 1 if nlat.le.0
 c
 c  *****************************************************************
 c
-      dimension theta(nlat),wts(nlat)
+      dimension theta(nlat),wts(nlat), w(*)
 c
 c     check work space length
 c
