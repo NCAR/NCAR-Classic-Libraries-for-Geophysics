@@ -1,0 +1,1337 @@
+mkdir -p ./lib
+mkdir -p ./objs
+( cd ./src; /usr/bin/gmake clean; /usr/bin/gmake )
+rm -f ../lib/libspherepack.a ../objs/advec.o ../objs/alf.o ../objs/divec.o ../objs/dives.o ../objs/divgc.o ../objs/divgs.o ../objs/gaqd.o ../objs/geo2math.o ../objs/gradec.o ../objs/grades.o ../objs/gradgc.o ../objs/gradgs.o ../objs/helmsph.o ../objs/hrfft.o ../objs/idivec.o ../objs/idives.o ../objs/idivgc.o ../objs/idivgs.o ../objs/idvtec.o ../objs/idvtes.o ../objs/idvtgc.o ../objs/idvtgs.o ../objs/igradec.o ../objs/igrades.o ../objs/igradgc.o ../objs/igradgs.o ../objs/ihgeod.o ../objs/isfvpec.o ../objs/isfvpes.o ../objs/isfvpgc.o ../objs/isfvpgs.o ../objs/islapec.o ../objs/islapes.o ../objs/islapgc.o ../objs/islapgs.o ../objs/ivlapec.o ../objs/ivlapes.o ../objs/ivlapgc.o ../objs/ivlapgs.o ../objs/ivrtec.o ../objs/ivrtes.o ../objs/ivrtgc.o ../objs/ivrtgs.o ../objs/lfim.o ../objs/lfin.o ../objs/lfp.o ../objs/lfpt.o ../objs/sfvpec.o ../objs/sfvpes.o ../objs/sfvpgc.o ../objs/sfvpgs.o ../objs/shaec.o ../objs/shaes.o ../objs/shagc.o ../objs/shags.o ../objs/shallow.o ../objs/shigc.o ../objs/shigs.o ../objs/shpe.o ../objs/shpg.o ../objs/shsec.o ../objs/shses.o ../objs/shsgc.o ../objs/shsgs.o ../objs/slapec.o ../objs/slapes.o ../objs/slapgc.o ../objs/slapgs.o ../objs/sphcom.o ../objs/sshifte.o ../objs/trssph.o ../objs/trvsph.o ../objs/vhaec.o ../objs/vhaes.o ../objs/vhagc.o ../objs/vhags.o ../objs/vhsec.o ../objs/vhses.o ../objs/vhsgc.o ../objs/vhsgs.o ../objs/visequ.o ../objs/visgau.o ../objs/visgeo.o ../objs/vlapec.o ../objs/vlapes.o ../objs/vlapgc.o ../objs/vlapgs.o ../objs/vrtec.o ../objs/vrtes.o ../objs/vrtgc.o ../objs/vrtgs.o ../objs/vshifte.o ../objs/vsurf.o ../objs/vtsec.o ../objs/vtses.o ../objs/vtsgc.o ../objs/vtsgs.o 
+gfortran -fdefault-real-8  -c advec.f -o ../objs/advec.o
+gfortran -fdefault-real-8  -c alf.f -o ../objs/alf.o
+gfortran -fdefault-real-8  -c divec.f -o ../objs/divec.o
+gfortran -fdefault-real-8  -c dives.f -o ../objs/dives.o
+gfortran -fdefault-real-8  -c divgc.f -o ../objs/divgc.o
+gfortran -fdefault-real-8  -c divgs.f -o ../objs/divgs.o
+gfortran -fdefault-real-8  -c gaqd.f -o ../objs/gaqd.o
+gfortran -fdefault-real-8  -c geo2math.f -o ../objs/geo2math.o
+gfortran -fdefault-real-8  -c gradec.f -o ../objs/gradec.o
+gfortran -fdefault-real-8  -c grades.f -o ../objs/grades.o
+gfortran -fdefault-real-8  -c gradgc.f -o ../objs/gradgc.o
+gfortran -fdefault-real-8  -c gradgs.f -o ../objs/gradgs.o
+gfortran -fdefault-real-8  -c helmsph.f -o ../objs/helmsph.o
+gfortran -fdefault-real-8  -c hrfft.f -o ../objs/hrfft.o
+gfortran -fdefault-real-8  -c idivec.f -o ../objs/idivec.o
+gfortran -fdefault-real-8  -c idives.f -o ../objs/idives.o
+gfortran -fdefault-real-8  -c idivgc.f -o ../objs/idivgc.o
+gfortran -fdefault-real-8  -c idivgs.f -o ../objs/idivgs.o
+gfortran -fdefault-real-8  -c idvtec.f -o ../objs/idvtec.o
+gfortran -fdefault-real-8  -c idvtes.f -o ../objs/idvtes.o
+gfortran -fdefault-real-8  -c idvtgc.f -o ../objs/idvtgc.o
+gfortran -fdefault-real-8  -c idvtgs.f -o ../objs/idvtgs.o
+gfortran -fdefault-real-8  -c igradec.f -o ../objs/igradec.o
+gfortran -fdefault-real-8  -c igrades.f -o ../objs/igrades.o
+gfortran -fdefault-real-8  -c igradgc.f -o ../objs/igradgc.o
+gfortran -fdefault-real-8  -c igradgs.f -o ../objs/igradgs.o
+gfortran -fdefault-real-8  -c ihgeod.f -o ../objs/ihgeod.o
+gfortran -fdefault-real-8  -c isfvpec.f -o ../objs/isfvpec.o
+gfortran -fdefault-real-8  -c isfvpes.f -o ../objs/isfvpes.o
+gfortran -fdefault-real-8  -c isfvpgc.f -o ../objs/isfvpgc.o
+gfortran -fdefault-real-8  -c isfvpgs.f -o ../objs/isfvpgs.o
+gfortran -fdefault-real-8  -c islapec.f -o ../objs/islapec.o
+gfortran -fdefault-real-8  -c islapes.f -o ../objs/islapes.o
+gfortran -fdefault-real-8  -c islapgc.f -o ../objs/islapgc.o
+gfortran -fdefault-real-8  -c islapgs.f -o ../objs/islapgs.o
+gfortran -fdefault-real-8  -c ivlapec.f -o ../objs/ivlapec.o
+gfortran -fdefault-real-8  -c ivlapes.f -o ../objs/ivlapes.o
+gfortran -fdefault-real-8  -c ivlapgc.f -o ../objs/ivlapgc.o
+gfortran -fdefault-real-8  -c ivlapgs.f -o ../objs/ivlapgs.o
+gfortran -fdefault-real-8  -c ivrtec.f -o ../objs/ivrtec.o
+gfortran -fdefault-real-8  -c ivrtes.f -o ../objs/ivrtes.o
+gfortran -fdefault-real-8  -c ivrtgc.f -o ../objs/ivrtgc.o
+gfortran -fdefault-real-8  -c ivrtgs.f -o ../objs/ivrtgs.o
+gfortran -fdefault-real-8  -c lfim.f -o ../objs/lfim.o
+gfortran -fdefault-real-8  -c lfin.f -o ../objs/lfin.o
+gfortran -fdefault-real-8  -c lfp.f -o ../objs/lfp.o
+gfortran -fdefault-real-8  -c lfpt.f -o ../objs/lfpt.o
+gfortran -fdefault-real-8  -c sfvpec.f -o ../objs/sfvpec.o
+gfortran -fdefault-real-8  -c sfvpes.f -o ../objs/sfvpes.o
+gfortran -fdefault-real-8  -c sfvpgc.f -o ../objs/sfvpgc.o
+gfortran -fdefault-real-8  -c sfvpgs.f -o ../objs/sfvpgs.o
+gfortran -fdefault-real-8  -c shaec.f -o ../objs/shaec.o
+gfortran -fdefault-real-8  -c shaes.f -o ../objs/shaes.o
+gfortran -fdefault-real-8  -c shagc.f -o ../objs/shagc.o
+gfortran -fdefault-real-8  -c shags.f -o ../objs/shags.o
+gfortran -fdefault-real-8  -c shallow.f -o ../objs/shallow.o
+gfortran -fdefault-real-8  -c shigc.f -o ../objs/shigc.o
+gfortran -fdefault-real-8  -c shigs.f -o ../objs/shigs.o
+gfortran -fdefault-real-8  -c shpe.f -o ../objs/shpe.o
+gfortran -fdefault-real-8  -c shpg.f -o ../objs/shpg.o
+gfortran -fdefault-real-8  -c shsec.f -o ../objs/shsec.o
+gfortran -fdefault-real-8  -c shses.f -o ../objs/shses.o
+gfortran -fdefault-real-8  -c shsgc.f -o ../objs/shsgc.o
+gfortran -fdefault-real-8  -c shsgs.f -o ../objs/shsgs.o
+gfortran -fdefault-real-8  -c slapec.f -o ../objs/slapec.o
+gfortran -fdefault-real-8  -c slapes.f -o ../objs/slapes.o
+gfortran -fdefault-real-8  -c slapgc.f -o ../objs/slapgc.o
+gfortran -fdefault-real-8  -c slapgs.f -o ../objs/slapgs.o
+gfortran -fdefault-real-8  -c sphcom.f -o ../objs/sphcom.o
+gfortran -fdefault-real-8  -c sshifte.f -o ../objs/sshifte.o
+gfortran -fdefault-real-8  -c trssph.f -o ../objs/trssph.o
+gfortran -fdefault-real-8  -c trvsph.f -o ../objs/trvsph.o
+gfortran -fdefault-real-8  -c vhaec.f -o ../objs/vhaec.o
+gfortran -fdefault-real-8  -c vhaes.f -o ../objs/vhaes.o
+gfortran -fdefault-real-8  -c vhagc.f -o ../objs/vhagc.o
+gfortran -fdefault-real-8  -c vhags.f -o ../objs/vhags.o
+gfortran -fdefault-real-8  -c vhsec.f -o ../objs/vhsec.o
+gfortran -fdefault-real-8  -c vhses.f -o ../objs/vhses.o
+gfortran -fdefault-real-8  -c vhsgc.f -o ../objs/vhsgc.o
+gfortran -fdefault-real-8  -c vhsgs.f -o ../objs/vhsgs.o
+gfortran -fdefault-real-8  -c visequ.f -o ../objs/visequ.o
+gfortran -fdefault-real-8  -c visgau.f -o ../objs/visgau.o
+gfortran -fdefault-real-8  -c visgeo.f -o ../objs/visgeo.o
+gfortran -fdefault-real-8  -c vlapec.f -o ../objs/vlapec.o
+gfortran -fdefault-real-8  -c vlapes.f -o ../objs/vlapes.o
+gfortran -fdefault-real-8  -c vlapgc.f -o ../objs/vlapgc.o
+gfortran -fdefault-real-8  -c vlapgs.f -o ../objs/vlapgs.o
+gfortran -fdefault-real-8  -c vrtec.f -o ../objs/vrtec.o
+gfortran -fdefault-real-8  -c vrtes.f -o ../objs/vrtes.o
+gfortran -fdefault-real-8  -c vrtgc.f -o ../objs/vrtgc.o
+gfortran -fdefault-real-8  -c vrtgs.f -o ../objs/vrtgs.o
+gfortran -fdefault-real-8  -c vshifte.f -o ../objs/vshifte.o
+gfortran -fdefault-real-8  -c vsurf.f -o ../objs/vsurf.o
+gfortran -fdefault-real-8  -c vtsec.f -o ../objs/vtsec.o
+gfortran -fdefault-real-8  -c vtses.f -o ../objs/vtses.o
+gfortran -fdefault-real-8  -c vtsgc.f -o ../objs/vtsgc.o
+gfortran -fdefault-real-8  -c vtsgs.f -o ../objs/vtsgs.o
+/usr/bin/ar -rv ../lib/libspherepack.a ../objs/advec.o ../objs/alf.o ../objs/divec.o ../objs/dives.o ../objs/divgc.o ../objs/divgs.o ../objs/gaqd.o ../objs/geo2math.o ../objs/gradec.o ../objs/grades.o ../objs/gradgc.o ../objs/gradgs.o ../objs/helmsph.o ../objs/hrfft.o ../objs/idivec.o ../objs/idives.o ../objs/idivgc.o ../objs/idivgs.o ../objs/idvtec.o ../objs/idvtes.o ../objs/idvtgc.o ../objs/idvtgs.o ../objs/igradec.o ../objs/igrades.o ../objs/igradgc.o ../objs/igradgs.o ../objs/ihgeod.o ../objs/isfvpec.o ../objs/isfvpes.o ../objs/isfvpgc.o ../objs/isfvpgs.o ../objs/islapec.o ../objs/islapes.o ../objs/islapgc.o ../objs/islapgs.o ../objs/ivlapec.o ../objs/ivlapes.o ../objs/ivlapgc.o ../objs/ivlapgs.o ../objs/ivrtec.o ../objs/ivrtes.o ../objs/ivrtgc.o ../objs/ivrtgs.o ../objs/lfim.o ../objs/lfin.o ../objs/lfp.o ../objs/lfpt.o ../objs/sfvpec.o ../objs/sfvpes.o ../objs/sfvpgc.o ../objs/sfvpgs.o ../objs/shaec.o ../objs/shaes.o ../objs/shagc.o ../objs/shags.o ../objs/shallow.o ../objs/shigc.o ../objs/shigs.o ../objs/shpe.o ../objs/shpg.o ../objs/shsec.o ../objs/shses.o ../objs/shsgc.o ../objs/shsgs.o ../objs/slapec.o ../objs/slapes.o ../objs/slapgc.o ../objs/slapgs.o ../objs/sphcom.o ../objs/sshifte.o ../objs/trssph.o ../objs/trvsph.o ../objs/vhaec.o ../objs/vhaes.o ../objs/vhagc.o ../objs/vhags.o ../objs/vhsec.o ../objs/vhses.o ../objs/vhsgc.o ../objs/vhsgs.o ../objs/visequ.o ../objs/visgau.o ../objs/visgeo.o ../objs/vlapec.o ../objs/vlapes.o ../objs/vlapgc.o ../objs/vlapgs.o ../objs/vrtec.o ../objs/vrtes.o ../objs/vrtgc.o ../objs/vrtgs.o ../objs/vshifte.o ../objs/vsurf.o ../objs/vtsec.o ../objs/vtses.o ../objs/vtsgc.o ../objs/vtsgs.o 
+ar: creating archive ../lib/libspherepack.a
+a - ../objs/advec.o
+a - ../objs/alf.o
+a - ../objs/divec.o
+a - ../objs/dives.o
+a - ../objs/divgc.o
+a - ../objs/divgs.o
+a - ../objs/gaqd.o
+a - ../objs/geo2math.o
+a - ../objs/gradec.o
+a - ../objs/grades.o
+a - ../objs/gradgc.o
+a - ../objs/gradgs.o
+a - ../objs/helmsph.o
+a - ../objs/hrfft.o
+a - ../objs/idivec.o
+a - ../objs/idives.o
+a - ../objs/idivgc.o
+a - ../objs/idivgs.o
+a - ../objs/idvtec.o
+a - ../objs/idvtes.o
+a - ../objs/idvtgc.o
+a - ../objs/idvtgs.o
+a - ../objs/igradec.o
+a - ../objs/igrades.o
+a - ../objs/igradgc.o
+a - ../objs/igradgs.o
+a - ../objs/ihgeod.o
+a - ../objs/isfvpec.o
+a - ../objs/isfvpes.o
+a - ../objs/isfvpgc.o
+a - ../objs/isfvpgs.o
+a - ../objs/islapec.o
+a - ../objs/islapes.o
+a - ../objs/islapgc.o
+a - ../objs/islapgs.o
+a - ../objs/ivlapec.o
+a - ../objs/ivlapes.o
+a - ../objs/ivlapgc.o
+a - ../objs/ivlapgs.o
+a - ../objs/ivrtec.o
+a - ../objs/ivrtes.o
+a - ../objs/ivrtgc.o
+a - ../objs/ivrtgs.o
+a - ../objs/lfim.o
+a - ../objs/lfin.o
+a - ../objs/lfp.o
+a - ../objs/lfpt.o
+a - ../objs/sfvpec.o
+a - ../objs/sfvpes.o
+a - ../objs/sfvpgc.o
+a - ../objs/sfvpgs.o
+a - ../objs/shaec.o
+a - ../objs/shaes.o
+a - ../objs/shagc.o
+a - ../objs/shags.o
+a - ../objs/shallow.o
+a - ../objs/shigc.o
+a - ../objs/shigs.o
+a - ../objs/shpe.o
+a - ../objs/shpg.o
+a - ../objs/shsec.o
+a - ../objs/shses.o
+a - ../objs/shsgc.o
+a - ../objs/shsgs.o
+a - ../objs/slapec.o
+a - ../objs/slapes.o
+a - ../objs/slapgc.o
+a - ../objs/slapgs.o
+a - ../objs/sphcom.o
+a - ../objs/sshifte.o
+a - ../objs/trssph.o
+a - ../objs/trvsph.o
+a - ../objs/vhaec.o
+a - ../objs/vhaes.o
+a - ../objs/vhagc.o
+a - ../objs/vhags.o
+a - ../objs/vhsec.o
+a - ../objs/vhses.o
+a - ../objs/vhsgc.o
+a - ../objs/vhsgs.o
+a - ../objs/visequ.o
+a - ../objs/visgau.o
+a - ../objs/visgeo.o
+a - ../objs/vlapec.o
+a - ../objs/vlapes.o
+a - ../objs/vlapgc.o
+a - ../objs/vlapgs.o
+a - ../objs/vrtec.o
+a - ../objs/vrtes.o
+a - ../objs/vrtgc.o
+a - ../objs/vrtgs.o
+a - ../objs/vshifte.o
+a - ../objs/vsurf.o
+a - ../objs/vtsec.o
+a - ../objs/vtses.o
+a - ../objs/vtsgc.o
+a - ../objs/vtsgs.o
+( cd ./test; /usr/bin/gmake clean; /usr/bin/gmake )
+rm -f  testrvsph.exe tdiv.exe testrssph.exe testsshifte.exe testvshifte.exe testvtsgs.exe tgaqd.exe tgrad.exe tidvt.exe tsha.exe tshpe.exe tshpg.exe tslap.exe tvha.exe tvlap.exe tvrt.exe tvts.exe
+rm -f testrvsph.exe
+gfortran -fdefault-real-8  testrvsph.f -o testrvsph.exe -L../lib -l spherepack
+./testrvsph.exe
+
+
+ EQUALLY SPACED TO GAUSSIAN GRID TRANSFER 
+ trvsph input arguments: 
+ intl =  0
+ igride(1) = -1   igride(2) =  1
+ nlone =  36   nlate =  19
+ ive =  1
+ igridg(1) =  2   igridg(2) =  0
+ nlong = 128   nlatg =  64
+ ivg =  0
+ lsave =   21814   lwork =   76000   ldwork =  8321
+
+
+ trvsph output: 
+ ier =        0  lsvmin =   21786  lwkmin =   75097
+ least squares error in u =  0.386E-14
+ least squares error in v =  0.238E-14
+
+
+ GAUSSIAN TO EQUALLY SPACED GRID TRANSFER 
+ trvsph input arguments: 
+ intl =  0
+ igridg(1) =  2   igridg(2) =  0
+ nlong = 128   nlatg =  64
+ ivg =  0
+ igride(1) = -1   igride(2) =  1
+ nlone =  36   nlate =  19
+ ive =  1
+ lsave =   21814   lwork =   76000   ldwork =  8321
+
+
+ trvsph output: 
+ ier =        0  lsvmin =   21808  lwkmin =   75097
+ least squares error in u =  0.565E-14
+ least squares error in v =  0.345E-14
+rm -f tdiv.exe
+gfortran -fdefault-real-8  tdiv.f -o tdiv.exe -L../lib -l spherepack
+./tdiv.exe
+ nlat =       15
+ nlon =        9
+   nt =        2
+ gaqd ier
+  ier =        0
+ thtg
+  0.1551E+00 0.3561E+00 0.5582E+00 0.7606E+00 0.9631E+00 0.1166E+01 0.1368E+01 0.1571E+01
+  0.1773E+01 0.1976E+01 0.2178E+01 0.2381E+01 0.2583E+01 0.2786E+01 0.2986E+01
+ ****icas
+ ****icas
+ icas =        1
+ **ecshs 
+ shs ierr
+ ierr =        0
+ vha shsi
+ ierr =        0
+ shsidiv 
+ ierr =        0
+ div **es
+ ierr =        0
+ nlat =       15
+ nlon =        9
+ err2 =  0.65071E-14
+ **ecshs 
+ shaisha 
+ ierr =        0
+ sha lsav
+ ierr =        0
+ lsav =    30375
+ lwrk =    10125
+ idviidiv
+ ierr =        0
+ idivprtb
+ ierr =        0
+ prtb
+ -0.1022E-14-0.3918E-17
+ errv =  0.24868E-14
+ errw =  0.28028E-14
+ ****icas
+ ****icas
+ icas =        2
+ **es**gc
+ shsidiv 
+ ierr =        0
+ div **es
+ ierr =        0
+ err2 =  0.65071E-14
+ **es**gc
+ shaisha 
+ ierr =        0
+ sha lsav
+ ierr =        0
+ lsav =    30375
+ lwrk =    10125
+ idviidiv
+ ierr =        0
+ idivprtb
+ ierr =        0
+ prtb
+ -0.1022E-14-0.3918E-17
+ errv =  0.24868E-14
+ errw =  0.28028E-14
+ ****icas
+ ****icas
+ icas =        3
+ **gc**gs
+ shsidiv 
+ ierr =        0
+ div **es
+ ierr =        0
+ err2 =  0.68190E-14
+ **gc**gs
+ shaisha 
+ ierr =        0
+ sha lsav
+ ierr =        0
+ lsav =    30375
+ lwrk =    10125
+ idviidiv
+ ierr =        0
+ idivprtb
+ ierr =        0
+ prtb
+ -0.1056E-14-0.7944E-17
+ errv =  0.25108E-14
+ errw =  0.28468E-14
+ ****icas
+ ****icas
+ icas =        4
+ **gserr2
+ shsidiv 
+ ierr =        0
+ div **es
+ ierr =        0
+ err2 =  0.68190E-14
+ **gserr2
+ shaisha 
+ ierr =        0
+ sha lsav
+ ierr =        0
+ lsav =    30375
+ lwrk =    10125
+ idviidiv
+ ierr =        0
+ idivprtb
+ ierr =        0
+ prtb
+ -0.1056E-14-0.7944E-17
+ errv =  0.25088E-14
+ errw =  0.28392E-14
+rm -f testrssph.exe
+gfortran -fdefault-real-8  testrssph.f -o testrssph.exe -L../lib -l spherepack
+./testrssph.exe
+
+
+ EQUALLY SPACED TO GAUSSIAN GRID TRANSFER 
+ trssph input arguments: 
+ intl =  0
+ igride(1) = -1   igride(2) =  1
+ nlone =  36   nlate =  19
+ igridg(1) =  2   igridg(2) =  0
+ nlong = 194   nlatg =  92
+ lsave =   22213   lwork =   53347   ldwork =  8832
+
+
+ trssph output: 
+ ier =  0  lsvmin =   22213  lwkmin =   53347
+ least squares error =  0.763E-11
+
+ GAUSSIAN TO EQUALLY SPACED GRID TRANSFER 
+ trssph input arguments: 
+ intl =  0
+ igridg(1) =  2   igridg(2) =  0
+ nlong = 194   nlatg =  92
+ igride(1) = -1   igride(2) =  1
+ nlone =  36   nlate =  19
+ lsave =   22213  lwork =   53347  ldwork =    8832
+
+
+ trssph output: 
+ ier =  0  lsvmin =   22213  lwkmin =   53347
+ least squares error =  0.546E-11
+rm -f testsshifte.exe
+gfortran -fdefault-real-8  testsshifte.f -o testsshifte.exe -L../lib -l spherepack
+./testsshifte.exe
+ sshifte arguments
+ ioff =  0 nlon = 144 nlat =  72
+ lsave =   608 lwork = 21024
+ ier =  0
+ least squares error =  0.725E-14
+ sshifte arguments
+ ioff =  1 nlon = 144 nlat =  72
+ lsave =   608 lwork = 21024
+ ier =  0
+ least squares error =  0.143E-13
+rm -f testvshifte.exe
+gfortran -fdefault-real-8  testvshifte.f -o testvshifte.exe -L../lib -l spherepack
+./testvshifte.exe
+ vshifte arguments
+ ioff =  0 nlon = 144 nlat =  72
+ lsave =   608 lwork = 21024
+ ier =  0
+ least squares error 
+ err2u =  0.737E-14 err2v =  0.504E-14
+ vshifte arguments
+ ioff =  1 nlon = 144 nlat =  72
+ lsave =   608 lwork = 21024
+ ier =  0
+ least squares error 
+ err2u =  0.145E-13 err2v =  0.988E-14
+rm -f testvtsgs.exe
+gfortran -fdefault-real-8  testvtsgs.f -o testvtsgs.exe -L../lib -l spherepack
+./testvtsgs.exe
+ testvtsgs: error in vt    1.756446E+02 error in wt    1.920956E+02
+rm -f tgaqd.exe
+gfortran -fdefault-real-8  tgaqd.f -o tgaqd.exe -L../lib -l spherepack
+./tgaqd.exe
+ check1 on dble cn    2.00000000000D+00
+ check2 on dble cn    1.27826212744D+00
+ check on dble cn    1.13060255061D+00
+ check1 on dble cn    2.00000000000D+00
+ check2 on dble cn    1.27834264789D+00
+ check on dble cn    1.13063815957D+00
+ check1 on dble cn    2.00000000000D+00
+ check2 on dble cn    1.27826212744D+00
+ check on dble cn    1.13060255061D+00
+ tdoub    2.090000E-04
+ tdoub gaqd   5.099998E-05
+ nlat    63  points    7.067899D-17 weights    6.592125D-15
+  sumw    2.000000000000000000000000000000D+00
+  sums    2.000000000000000E+00
+ weights: nlat     63 irele      2 dmax    6.592125E-15 rmax    1.196079E-14
+ points:  nlat     63 irele     13 dmax    7.067899E-17 rmax    1.759927E-16
+ max difference in mu   1.110223E-16
+ nlat    63 tsing   4.899997E-05 tdoub   5.099998E-05
+rm -f tgrad.exe
+gfortran -fdefault-real-8  tgrad.f -o tgrad.exe -L../lib -l spherepack
+./tgrad.exe
+ nlat =       33
+ nlon =       18
+   nt =        4
+ gaqd ier
+  ier =        0
+ thtg
+  0.7178E-01 0.1648E+00 0.2583E+00 0.3520E+00 0.4457E+00 0.5394E+00 0.6332E+00 0.7269E+00
+  0.8207E+00 0.9144E+00 0.1008E+01 0.1102E+01 0.1196E+01 0.1289E+01 0.1383E+01 0.1477E+01
+  0.1571E+01 0.1665E+01 0.1758E+01 0.1852E+01 0.1946E+01 0.2040E+01 0.2133E+01 0.2227E+01
+  0.2321E+01 0.2415E+01 0.2508E+01 0.2602E+01 0.2696E+01 0.2790E+01 0.2883E+01 0.2977E+01
+  0.3070E+01
+ ****icas
+ ****icas
+ icas =        1
+ **ecshai
+ shaiierr
+ ierr =        0
+ sha vhci
+ ierr =        0
+ vhcigrad
+ ierr =        0
+ grad**es
+ ierr =        0
+ errv =  0.52763E-14
+ errw =  0.29443E-14
+ vhaivha 
+ ierr =        0
+ vha shec
+ ierr =        0
+ shecigra
+ ierr =        0
+ igrashes
+ ierr =        0
+ errs =  0.11298E-14
+ ****icas
+ ****icas
+ icas =        2
+ **esvhsi
+ shaiierr
+ ierr =        0
+ sha vhci
+ ierr =        0
+ vhsi**gc
+ ierr =        0
+ grad**es
+ ierr =        0
+ errv =  0.52763E-14
+ errw =  0.29443E-14
+ vhaivha 
+ ierr =        0
+ vha shec
+ ierr =        0
+ shesshgc
+ ierr =        0
+ igrashes
+ ierr =        0
+ errs =  0.11298E-14
+ ****icas
+ ****icas
+ icas =        3
+ **gcvhgc
+ shaiierr
+ ierr =        0
+ sha vhci
+ ierr =        0
+ vhgc**gs
+ ierr =        0
+ grad**es
+ ierr =        0
+ errv =  0.61493E-14
+ errw =  0.32628E-14
+ vhaivha 
+ ierr =        0
+ vha shec
+ ierr =        0
+ shgcshgs
+ ierr =        0
+ igrashes
+ ierr =        0
+ errs =  0.11595E-14
+ ****icas
+ ****icas
+ icas =        4
+ **gsvhgs
+ shaiierr
+ ierr =        0
+ sha vhci
+ ierr =        0
+ vhgserrv
+ ierr =        0
+ grad**es
+ ierr =        0
+ errv =  0.61493E-14
+ errw =  0.32743E-14
+ vhaivha 
+ ierr =        0
+ vha shec
+ ierr =        0
+ shgserrs
+ ierr =        0
+ igrashes
+ ierr =        0
+ errs =  0.11579E-14
+rm -f tidvt.exe
+gfortran -fdefault-real-8  tidvt.f -o tidvt.exe -L../lib -l spherepack
+./tidvt.exe
+ nlat =       25
+ nlon =       16
+   nt =        3
+ gaqd ier
+  ier =        0
+ thtg
+  0.9430E-01 0.2165E+00 0.3393E+00 0.4624E+00 0.5855E+00 0.7086E+00 0.8318E+00 0.9549E+00
+  0.1078E+01 0.1201E+01 0.1324E+01 0.1448E+01 0.1571E+01 0.1694E+01 0.1817E+01 0.1940E+01
+  0.2063E+01 0.2187E+01 0.2310E+01 0.2433E+01 0.2556E+01 0.2679E+01 0.2802E+01 0.2925E+01
+  0.3047E+01
+ ****icas
+ ****icas
+ icas =        1
+ **ecvhai
+ vhaiierr
+ ierr =        0
+ vha shsi
+ ierr =        0
+ shsidiv 
+ ierr =        0
+ div vrt 
+ ierr =        0
+ vrt **es
+ ierr =        0
+ errd =  0.14631E-13
+ errv =  0.98325E-14
+ **ecvhai
+ shaisha 
+ ierr =        0
+ sha lsav
+ ierr =        0
+ lsav =   150000
+ lwrk =    50000
+ idviidvt
+ ierr =        0
+ idvtprtd
+ ierr =        0
+ prtd
+  0.0000E+00 0.3395-312 0.1698-312
+ prtv
+  0.0000E+00 0.0000E+00 0.3395-312
+ errv =  0.11544E-14
+ errw =  0.62771E-15
+ ****icas
+ ****icas
+ icas =        2
+ **es**gc
+ vhaiierr
+ ierr =        0
+ vha shsi
+ ierr =        0
+ shsidiv 
+ ierr =        0
+ div vrt 
+ ierr =        0
+ vrt **es
+ ierr =        0
+ errd =  0.14631E-13
+ errv =  0.98325E-14
+ **es**gc
+ shaisha 
+ ierr =        0
+ sha lsav
+ ierr =        0
+ lsav =   150000
+ lwrk =    50000
+ idviidvt
+ ierr =        0
+ idvtprtd
+ ierr =        0
+ prtd
+  0.0000E+00 0.3395-312 0.1698-312
+ prtv
+  0.0000E+00 0.0000E+00 0.3395-312
+ errv =  0.11544E-14
+ errw =  0.62771E-15
+ ****icas
+ ****icas
+ icas =        3
+ **gc**gs
+ vhaiierr
+ ierr =        0
+ vha shsi
+ ierr =        0
+ shsidiv 
+ ierr =        0
+ div vrt 
+ ierr =        0
+ vrt **es
+ ierr =        0
+ errd =  0.26116E-13
+ errv =  0.16054E-13
+ **gc**gs
+ shaisha 
+ ierr =        0
+ sha lsav
+ ierr =        0
+ lsav =   150000
+ lwrk =    50000
+ idviidvt
+ ierr =        0
+ idvtprtd
+ ierr =        0
+ prtd
+  0.0000E+00 0.3395-312 0.1698-312
+ prtv
+  0.0000E+00 0.0000E+00 0.3395-312
+ errv =  0.13803E-14
+ errw =  0.85830E-15
+ ****icas
+ ****icas
+ icas =        4
+ **gserrd
+ vhaiierr
+ ierr =        0
+ vha shsi
+ ierr =        0
+ shsidiv 
+ ierr =        0
+ div vrt 
+ ierr =        0
+ vrt **es
+ ierr =        0
+ errd =  0.21286E-13
+ errv =  0.12409E-13
+ **gserrd
+ shaisha 
+ ierr =        0
+ sha lsav
+ ierr =        0
+ lsav =   150000
+ lwrk =    50000
+ idviidvt
+ ierr =        0
+ idvtprtd
+ ierr =        0
+ prtd
+  0.0000E+00 0.3395-312 0.1698-312
+ prtv
+  0.0000E+00 0.0000E+00 0.3395-312
+ errv =  0.13273E-14
+ errw =  0.75961E-15
+rm -f tsha.exe
+gfortran -fdefault-real-8  tsha.f -o tsha.exe -L../lib -l spherepack
+./tsha.exe
+ nlat =       15
+ nlon =       18
+   nt =        3
+ gaqd ier
+  ier =        0
+ thtg
+  0.1551E+00 0.3561E+00 0.5582E+00 0.7606E+00 0.9631E+00 0.1166E+01 0.1368E+01 0.1571E+01
+  0.1773E+01 0.1976E+01 0.2178E+01 0.2381E+01 0.2583E+01 0.2786E+01 0.2986E+01
+ ****icas
+ ****icas
+ icas =        1
+ **ecshai
+ shaiierr
+ ierr =        0
+ sha shsi
+ ierr =        0
+ shsishs 
+ ierr =        0
+ shs **es
+ ierr =        0
+ err2 =  0.16933E-15
+ ****icas
+ ****icas
+ icas =        2
+ **es**gc
+ shaiierr
+ ierr =        0
+ sha shsi
+ ierr =        0
+ shsishs 
+ ierr =        0
+ shs **es
+ ierr =        0
+ err2 =  0.16933E-15
+ ****icas
+ ****icas
+ icas =        3
+ **gc**gs
+ shaiierr
+ ierr =        0
+ sha shsi
+ ierr =        0
+ shsishs 
+ ierr =        0
+ shs **es
+ ierr =        0
+ err2 =  0.17708E-15
+ ****icas
+ ****icas
+ icas =        4
+ **gserr2
+ shaiierr
+ ierr =        0
+ sha shsi
+ ierr =        0
+ shsishs 
+ ierr =        0
+ shs **es
+ ierr =        0
+ err2 =  0.17708E-15
+rm -f tshpe.exe
+gfortran -fdefault-real-8  tshpe.f -o tshpe.exe -L../lib -l spherepack
+./tshpe.exe
+
+case nlat =    6 and mtrunc =    5
+
+
+ error =   5.551115E-16
+ tusl  =   4.100002E-05
+ toe   =   1.600001E-05
+
+case nlat =    6 and mtrunc =    4
+
+
+ error =   6.383782E-16
+ tusl  =   1.700001E-05
+ toe   =   1.000002E-05
+
+case nlat =    6 and mtrunc =    3
+
+
+ error =   4.440892E-16
+ tusl  =   1.600001E-05
+ toe   =   1.000002E-05
+
+case nlat =    7 and mtrunc =    6
+
+
+ error =   1.054712E-15
+ tusl  =   3.100000E-05
+ toe   =   1.600001E-05
+
+case nlat =    7 and mtrunc =    5
+
+
+ error =   7.216450E-16
+ tusl  =   2.300000E-05
+ toe   =   1.500000E-05
+
+case nlat =    7 and mtrunc =    4
+
+
+ error =   5.689893E-16
+ tusl  =   2.300006E-05
+ toe   =   1.399999E-05
+
+case nlat =    8 and mtrunc =    7
+
+
+ error =   1.110223E-15
+ tusl  =   4.399999E-05
+ toe   =   2.499996E-05
+
+case nlat =    8 and mtrunc =    6
+
+
+ error =   1.221245E-15
+ tusl  =   3.699993E-05
+ toe   =   2.499996E-05
+
+case nlat =    8 and mtrunc =    5
+
+
+ error =   1.110223E-15
+ tusl  =   3.700005E-05
+ toe   =   2.400007E-05
+rm -f tshpg.exe
+gfortran -fdefault-real-8  tshpg.f -o tshpg.exe -L../lib -l spherepack
+./tshpg.exe
+
+case nlat =    6 and mtrunc =    5
+
+
+ error =   9.436896E-16
+ tusl  =   3.699999E-05
+ toe   =   1.500003E-05
+
+case nlat =    6 and mtrunc =    4
+
+
+ error =   4.996004E-16
+ tusl  =   1.800002E-05
+ toe   =   1.000002E-05
+
+case nlat =    7 and mtrunc =    6
+
+
+ error =   6.661338E-16
+ tusl  =   3.200001E-05
+ toe   =   1.500000E-05
+
+case nlat =    7 and mtrunc =    5
+
+
+ error =   5.551115E-16
+ tusl  =   2.400001E-05
+ toe   =   1.300004E-05
+
+case nlat =    8 and mtrunc =    7
+
+
+ error =   7.771561E-16
+ tusl  =   4.299998E-05
+ toe   =   2.500002E-05
+
+case nlat =    8 and mtrunc =    6
+
+
+ error =   6.661338E-16
+ tusl  =   3.900006E-05
+ toe   =   2.499996E-05
+rm -f tslap.exe
+gfortran -fdefault-real-8  tslap.f -o tslap.exe -L../lib -l spherepack
+./tslap.exe
+ nlat =       15
+ nlon =       22
+   nt =        3
+ gaqd ier
+  ier =        0
+ thtg
+  0.1551E+00 0.3561E+00 0.5582E+00 0.7606E+00 0.9631E+00 0.1166E+01 0.1368E+01 0.1571E+01
+  0.1773E+01 0.1976E+01 0.2178E+01 0.2381E+01 0.2583E+01 0.2786E+01 0.2986E+01
+ ****icas
+ ****icas
+ icas =        1
+ **ecshai
+ shaiierr
+ ierr =        0
+ sha shsi
+ ierr =        0
+ shsislap
+ ierr =        0
+ slap**es
+ ierr =        0
+ err2 =  0.14362E-12
+ shsislap
+ ierr =        0
+ islaptrb
+ ierr =        0
+ ptrb
+  0.0000E+00 0.0000E+00 0.0000E+00
+ errs =  0.30556E-14
+ ****icas
+ ****icas
+ icas =        2
+ **es**gc
+ shaiierr
+ ierr =        0
+ sha shsi
+ ierr =        0
+ shsislap
+ ierr =        0
+ slap**es
+ ierr =        0
+ err2 =  0.14362E-12
+ shsislap
+ ierr =        0
+ islaptrb
+ ierr =        0
+ ptrb
+  0.0000E+00 0.0000E+00 0.0000E+00
+ errs =  0.30556E-14
+ ****icas
+ ****icas
+ icas =        3
+ **gc**gs
+ shaiierr
+ ierr =        0
+ sha shsi
+ ierr =        0
+ shsislap
+ ierr =        0
+ slap**es
+ ierr =        0
+ err2 =  0.16449E-12
+ shsislap
+ ierr =        0
+ islaptrb
+ ierr =        0
+ ptrb
+  0.0000E+00 0.0000E+00 0.0000E+00
+ errs =  0.32551E-14
+ ****icas
+ ****icas
+ icas =        4
+ **gserr2
+ shaiierr
+ ierr =        0
+ sha shsi
+ ierr =        0
+ shsislap
+ ierr =        0
+ slap**es
+ ierr =        0
+ err2 =  0.16449E-12
+ **gserr2
+ shsislap
+ ierr =        0
+ islaptrb
+ ierr =        0
+ ptrb
+  0.0000E+00 0.0000E+00 0.0000E+00
+ errs =  0.32551E-14
+rm -f tvha.exe
+gfortran -fdefault-real-8  tvha.f -o tvha.exe -L../lib -l spherepack
+./tvha.exe
+ nlat =       25
+ nlon =       19
+   nt =        2
+ gaqd ier
+  ier =        0
+ thtg
+  0.9430E-01 0.2165E+00 0.3393E+00 0.4624E+00 0.5855E+00 0.7086E+00 0.8318E+00 0.9549E+00
+  0.1078E+01 0.1201E+01 0.1324E+01 0.1448E+01 0.1571E+01 0.1694E+01 0.1817E+01 0.1940E+01
+  0.2063E+01 0.2187E+01 0.2310E+01 0.2433E+01 0.2556E+01 0.2679E+01 0.2802E+01 0.2925E+01
+  0.3047E+01
+ ****icas
+ ****icas
+ icas =        1
+ **ecvhai
+ vhaiierr
+ ierr =        0
+ vha vhsi
+ ierr =        0
+ vhsivhs 
+ ierr =        0
+ vhs **es
+ ierr =        0
+ errv =  0.27976E-14
+ errw =  0.47457E-14
+ ****icas
+ ****icas
+ icas =        2
+ **es**gc
+ vhaiierr
+ ierr =        0
+ vha vhsi
+ ierr =        0
+ vhsivhs 
+ ierr =        0
+ vhs **es
+ ierr =        0
+ errv =  0.27976E-14
+ errw =  0.47457E-14
+ ****icas
+ ****icas
+ icas =        3
+ **gcvhgi
+ vhgi**gs
+ nlat =       25
+ vhaiierr
+ ierr =        0
+ vha vhsi
+ ierr =        0
+ vhsivhs 
+ ierr =        0
+ vhs **es
+ ierr =        0
+ errv =  0.29802E-14
+ errw =  0.48770E-14
+ ****icas
+ ****icas
+ icas =        4
+ **gserrv
+ vhaiierr
+ ierr =        0
+ vha vhsi
+ ierr =        0
+ vhsivhs 
+ ierr =        0
+ vhs **es
+ ierr =        0
+ errv =  0.29204E-14
+ errw =  0.49252E-14
+rm -f tvlap.exe
+gfortran -fdefault-real-8  tvlap.f -o tvlap.exe -L../lib -l spherepack
+./tvlap.exe
+ nlat =       29
+ nlon =       16
+   nt =        1
+ gaqd ier
+  ier =        0
+ thtg
+  0.8152E-01 0.1871E+00 0.2933E+00 0.3997E+00 0.5061E+00 0.6125E+00 0.7190E+00 0.8255E+00
+  0.9319E+00 0.1038E+01 0.1145E+01 0.1251E+01 0.1358E+01 0.1464E+01 0.1571E+01 0.1677E+01
+  0.1784E+01 0.1890E+01 0.1997E+01 0.2103E+01 0.2210E+01 0.2316E+01 0.2423E+01 0.2529E+01
+  0.2635E+01 0.2742E+01 0.2848E+01 0.2954E+01 0.3060E+01
+ ****icas
+ ****icas
+ icas =        1
+ **ecvhai
+ vhaiierr
+ ierr =        0
+ vha vhsi
+ ierr =        0
+ vhsivlap
+ ierr =        0
+ vlap**es
+ ierr =        0
+ errv =  0.15792E-12
+ errw =  0.17080E-12
+ **ecvhai
+ vhaiierr
+ ierr =        0
+ vha vhsi
+ ierr =        0
+ vhsivlap
+ ierr =        0
+ ivlptvla
+ ierr =        0
+ errv =  0.58301E-15
+ errw =  0.34300E-15
+ ****icas
+ ****icas
+ icas =        2
+ **esvhae
+ vhaiierr
+ ierr =        0
+ vhae**gc
+ ierr =        0
+ vhsivlap
+ ierr =        0
+ vlap**es
+ ierr =        0
+ errv =  0.15792E-12
+ errw =  0.17080E-12
+ **esvhae
+ vhaiierr
+ ierr =        0
+ vha vhsi
+ ierr =        0
+ vhsivlap
+ ierr =        0
+ ivlptvla
+ ierr =        0
+ errv =  0.58301E-15
+ errw =  0.34300E-15
+ ****icas
+ ****icas
+ icas =        3
+ **gc**gs
+ vhaiierr
+ ierr =        0
+ vha vhsi
+ ierr =        0
+ vhsivlap
+ ierr =        0
+ vlap**es
+ ierr =        0
+ errv =  0.44795E-12
+ errw =  0.32636E-12
+ **gc**gs
+ vhaiierr
+ ierr =        0
+ vha vhsi
+ ierr =        0
+ vhsivlap
+ ierr =        0
+ ivlptvla
+ ierr =        0
+ errv =  0.17268E-14
+ errw =  0.11622E-14
+ ****icas
+ ****icas
+ icas =        4
+ **gserrv
+ vhaiierr
+ ierr =        0
+ vha vhsi
+ ierr =        0
+ vhsivlap
+ ierr =        0
+ vlap**es
+ ierr =        0
+ errv =  0.34205E-12
+ errw =  0.21221E-12
+ **gserrv
+ vhaiierr
+ ierr =        0
+ vha vhsi
+ ierr =        0
+ vhsivlap
+ ierr =        0
+ ivlptvla
+ ierr =        0
+ errv =  0.13693E-14
+ errw =  0.96602E-15
+rm -f tvrt.exe
+gfortran -fdefault-real-8  tvrt.f -o tvrt.exe -L../lib -l spherepack
+./tvrt.exe
+ nlat =       24
+ nlon =       14
+   nt =        3
+ gaqd ier
+  ier =        0
+ thtg
+  0.9815E-01 0.2253E+00 0.3532E+00 0.4813E+00 0.6094E+00 0.7375E+00 0.8657E+00 0.9939E+00
+  0.1122E+01 0.1250E+01 0.1378E+01 0.1507E+01 0.1635E+01 0.1763E+01 0.1891E+01 0.2019E+01
+  0.2148E+01 0.2276E+01 0.2404E+01 0.2532E+01 0.2660E+01 0.2788E+01 0.2916E+01 0.3043E+01
+ ****icas
+ ****icas
+ icas =        1
+ **ecvhai
+ vhaiierr
+ ierr =        0
+ vha vrti
+ ierr =        0
+ vrtivrt 
+ ierr =        0
+ vrt **es
+ ierr =        0
+ nlat =       24
+ nlon =       14
+ err2 =  0.12755E-13
+ **ecvhai
+ vhsivhs 
+ ierr =        0
+ vhs shai
+ ierr =        0
+ shaisha 
+ ierr =        0
+ sha lsav
+ ierr =        0
+ lsav =    40320
+ lwrk =    40320
+ vhsivhs 
+ ierr =        0
+ ivrtprtb
+ ierr =        0
+ prtb = -0.15983E-14
+ errv =  0.12461E-14
+ errw =  0.74106E-15
+ ****icas
+ ****icas
+ icas =        2
+ **es**gc
+ vrtivrt 
+ ierr =        0
+ vrt **es
+ ierr =        0
+ err2 =  0.12755E-13
+ **es**gc
+ vhsivhs 
+ ierr =        0
+ vhs shai
+ ierr =        0
+ shaisha 
+ ierr =        0
+ sha lsav
+ ierr =        0
+ lsav =    40320
+ lwrk =    40320
+ ivtierrv
+ ierr =        0
+ ivrtprtb
+ ierr =        0
+ prtb = -0.15983E-14
+ errv =  0.12461E-14
+ errw =  0.74106E-15
+ ****icas
+ ****icas
+ icas =        3
+ **gc**gs
+ vrtivrt 
+ ierr =        0
+ vrt **es
+ ierr =        0
+ err2 =  0.13434E-13
+ **gc**gs
+ vhsivhs 
+ ierr =        0
+ vhs shai
+ ierr =        0
+ shaisha 
+ ierr =        0
+ sha lsav
+ ierr =        0
+ lsav =    40320
+ lwrk =    40320
+ ivtierrv
+ ierr =        0
+ ivrtprtb
+ ierr =        0
+ prtb = -0.16148E-14
+ errv =  0.13104E-14
+ errw =  0.75580E-15
+ ****icas
+ ****icas
+ icas =        4
+ **gserr2
+ vrtivrt 
+ ierr =        0
+ vrt **es
+ ierr =        0
+ err2 =  0.13434E-13
+ **gserr2
+ vhsivhs 
+ ierr =        0
+ vhs shai
+ ierr =        0
+ shaisha 
+ ierr =        0
+ sha lsav
+ ierr =        0
+ lsav =    40320
+ lwrk =    40320
+ ivtierrv
+ ierr =        0
+ ivrtprtb
+ ierr =        0
+ prtb = -0.16148E-14
+ errv =  0.13104E-14
+ errw =  0.75580E-15
+rm -f tvts.exe
+gfortran -fdefault-real-8  tvts.f -o tvts.exe -L../lib -l spherepack
+./tvts.exe
+ nlat =       25
+ nlon =       19
+   nt =        3
+ gaqd ier
+  ier =        0
+ thtg
+  0.9430E-01 0.2165E+00 0.3393E+00 0.4624E+00 0.5855E+00 0.7086E+00 0.8318E+00 0.9549E+00
+  0.1078E+01 0.1201E+01 0.1324E+01 0.1448E+01 0.1571E+01 0.1694E+01 0.1817E+01 0.1940E+01
+  0.2063E+01 0.2187E+01 0.2310E+01 0.2433E+01 0.2556E+01 0.2679E+01 0.2802E+01 0.2925E+01
+  0.3047E+01
+ ****icas
+ ****icas
+ icas =        1
+ **ecvhai
+ vhaiierr
+ ierr =        0
+ vha vtsi
+ ierr =        0
+ vtsivts 
+ ierr =        0
+ vts **es
+ ierr =        0
+ errv =  0.16913E-12
+ errw =  0.16523E-12
+ ****icas
+ ****icas
+ icas =        2
+ **es**gc
+ vhaiierr
+ ierr =        0
+ vha vtsi
+ ierr =        0
+ vtsivts 
+ ierr =        0
+ vts **es
+ ierr =        0
+ errv =  0.16913E-12
+ errw =  0.16523E-12
+ ****icas
+ ****icas
+ icas =        3
+ **gcvhgi
+ vhgi**gs
+ nlat =       25
+ vhaiierr
+ ierr =        0
+ vha vtsi
+ ierr =        0
+ vtsivts 
+ ierr =        0
+ vts **es
+ ierr =        0
+ errv =  0.18700E-12
+ errw =  0.18203E-12
+ ****icas
+ ****icas
+ icas =        4
+ **gserrv
+ vhaiierr
+ ierr =        0
+ vha vtsi
+ ierr =        0
+ vtsivts 
+ ierr =        0
+ vts **es
+ ierr =        0
+ errv =  0.18615E-12
+ errw =  0.18114E-12
